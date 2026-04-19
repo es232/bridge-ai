@@ -3,10 +3,11 @@ import json
 
 # Connect to your MySQL Workbench
 db = mysql.connector.connect(
-    host="localhost",
+    host="roundhouse.proxy.rlwy.net",
     user="root",
-    password="1011",
-    database="bridge_ai"
+    password="pZaxWVmBzQpwIAKEwcnUynVIeFCqSNAS",
+    database="railway",
+    port=45109
 )
 cursor = db.cursor()
 

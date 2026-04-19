@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Award, Search } from 'lucide-react'; // Added Search
-const API_BASE_URL = import.meta.env.VITE_API_URL || `${API_BASE_URL}`;
+import { ExternalLink, Award, Search } from 'lucide-react';
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://bridge-ai-5vrk.onrender.com";
 
 interface Opportunity {
   id: number;

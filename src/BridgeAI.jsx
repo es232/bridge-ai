@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { useStore } from './store';
 import { 
-const API_BASE_URL = import.meta.env.VITE_API_URL || `${API_BASE_URL}`;
   User, Lock, Mail, LayoutDashboard, Search, Bell, 
   Settings, LogOut, GraduationCap, Briefcase, Landmark, 
   ChevronRight, Star, Filter, ArrowRight, CheckCircle2,
@@ -11,6 +10,8 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || `${API_BASE_URL}`;
   TrendingUp, Zap, MessageSquare, Microscope, Layers, Send, 
   Mic, MicOff, Volume2, VolumeX, Phone, Globe, MessageCircle, ScanFace
 } from 'lucide-react';
+
+const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
 
 const TRANSLATIONS = {
   en: {

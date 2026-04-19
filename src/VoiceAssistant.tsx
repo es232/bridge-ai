@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useStore } from './store';
 import { useNavigate } from 'react-router-dom';
 import { Mic, MicOff, CheckCircle2, ChevronRight, Activity } from 'lucide-react';
-const API_BASE_URL = import.meta.env.VITE_API_URL || `${API_BASE_URL}`;
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://bridge-ai-5vrk.onrender.com";
 
 const LANG_MAP = {
   en: 'en-US',
