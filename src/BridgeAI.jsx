@@ -11,7 +11,7 @@ import {
   Mic, MicOff, Volume2, VolumeX, Phone, Globe, MessageCircle, ScanFace
 } from 'lucide-react';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_URL || "https://bridge-ai-5vrk.onrender.com";
 
 const TRANSLATIONS = {
   en: {
