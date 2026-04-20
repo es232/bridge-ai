@@ -24,11 +24,16 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # --- CONFIGURATION ---
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", "your-api-key")) 
+client = genai.Client(api_key=os.getenv("GEMINI_API_KEY", "AIzaSyDcr6MEU6CkGgIaoTdUesGxJJsMSTic_Uo")) 
+origins = [
+    "https://bridge-ai-sac9.vercel.app", # Your actual Vercel domain
+    "http://localhost:5173",             # For local development
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins, # Use the list instead of ["*"]
+    allow_credentials=True, # Set to True if you use cookies/auth headers
     allow_methods=["*"],
     allow_headers=["*"],
 )

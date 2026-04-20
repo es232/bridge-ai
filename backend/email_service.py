@@ -11,8 +11,8 @@ load_dotenv()
 # Cloud-agnostic configuration via environment variables
 SMTP_SERVER = os.getenv("SMTP_SERVER", "smtp.gmail.com")
 SMTP_PORT = int(os.getenv("SMTP_PORT", 587))
-SENDER_EMAIL = os.getenv("SMTP_EMAIL", "your-email@gmail.com") 
-SENDER_PASSWORD = os.getenv("SMTP_PASSWORD", "")
+SENDER_EMAIL = os.getenv("SMTP_EMAIL", "esakkiammalg2025@gmail.com") 
+SENDER_PASSWORD = os.getenv("SMTP_PASSWORD", "cizr wyeg jtsd ttkd")
 
 def send_notification(to_email: str, subject: str, message_html: str):
     print(f"\n[{datetime.now()}] 🚀 PREPARING TO SEND EMAIL TO: {to_email}")
